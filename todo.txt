@@ -1,0 +1,10 @@
+Issues
+5/6=0.8(3) > ERR
++ > 0+
+1 > 0+1=1
+---
+1) round fractial > 0.83333333 done
+2) ERR > nothing but DEL done
+3) 0.2500 > 0.25 done
+4) *10^
+4) MS Calc...

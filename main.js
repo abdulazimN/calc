@@ -8,35 +8,38 @@ var screen = "";
 //KeyBoard Input
 document.getElementById("body").onkeyup = function (e) {
   var key = e.key;
+  
+  if(mini != "ERR")
+  {
+    // digit keys
+    if (key < 10 && key >= 0) {
+      Click(Number(key));
+    }
 
-  // digit keys
-  if (key < 10 && key >= 0) {
-    Click(Number(key));
-  }
+    //operations
+    if (key == "/" || key == "*" || key == "+" || key == "-") {
+      Operations(key);
+    }
 
-  //operations
-  if (key == "/" || key == "*" || key == "+" || key == "-") {
-    Operations(key);
-  }
+    //equals
+    if (key == "=" || key == "Enter") {
+      Equal(key);
+    }
 
-  //equals
-  if (key == "=" || key == "Enter") {
-    Equal(key);
-  }
+    //dot
+    if (key == ".") {
+      Dot(key);
+    }
 
-  //dot
-  if (key == ".") {
-    Dot(key);
+    //AC
+    if (key == "Backspace") {
+      AC(key);
+    }
   }
 
   //Delete
   if (key == "Delete" && e.location == "0") {
-    Delete(key);
-  }
-
-  //AC
-  if (key == "Backspace") {
-    AC(key);
+  Delete(key);
   }
 };
 
@@ -63,7 +66,7 @@ function MiniScreen(txt) {
     mini = "" + num1 + Oper + num2;
   }
   if (mini == "NaN" || mini == "Infinity") mini = "ERR";
-
+  
   ShowMiniScreen();
 }
 
@@ -148,7 +151,7 @@ function SignChange() {
   if (Oper == "=") Oper = "";
   Screen();
 }
-//?
+
 function ClearLastDigit(num) {
   return num.substring(0, num.length - 1);
 }
@@ -208,7 +211,7 @@ function Equal() {
         break;
     }
   }
-  res = "" + res;
+  res = "" + parseFloat(res.toFixed(5));
   Oper = "=";
   num2 = "";
 
