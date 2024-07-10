@@ -1,0 +1,34 @@
+
+.cont{
+    padding-top: 50px;
+    margin: auto;
+    width: 320px;
+}
+
+td {
+    background-color: lightskyblue;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 10px;
+    user-select: none;
+}
+#screen{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    text-align: right;
+    background-color: lightcyan;
+    user-select: all;
+}
+#mini {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 30px;
+    text-align: right;
+    user-select: all;
+}
+.delete {
+    background-color: dodgerblue;
+    color: aliceblue;
+}

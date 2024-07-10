@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="cont">
+    <table>
+        <tr><td id="mini" colspan="4"></td> </tr>
+        <tr><td id="screen" colspan="4">0</td></tr>
+        <tr> 
+            <td class="delete" onclick="Delete()">DEL</td>
+            <td class="delete" onclick="AC()">AC</td>
+            <td class="operations" onclick="SignChange()">+/-</td>
+            <td class="operations" onclick="Operations('/')">/</td> 
+        </tr>
+        <tr> 
+            <td  onclick="Click(7)">7</td>
+            <td  onclick="Click(8)">8</td>
+            <td  onclick="Click(9)">9</td>
+            <td class="operations" onclick="Operations('*')">*</td> 
+        </tr>
+        <tr> 
+            <td  onclick="Click(4)">4</td>
+            <td  onclick="Click(5)">5</td>
+            <td  onclick="Click(6)">6</td>
+            <td class="operations" onclick="Operations('+')">+</td> 
+        </tr>
+        <tr> 
+            <td  onclick="Click(1)">1</td>
+            <td  onclick="Click(2)">2</td>
+            <td  onclick="Click(3)">3</td>
+            <td class="operations" onclick="Operations('-')">-</td> 
+        </tr>
+        <tr> 
+            <td  onclick="Click(0)">0</td>
+            <td onclick = "Dot()" style="background-color:dodgerblue; color: aliceblue;" >.</td>
+            <td colspan="2" style="background-color: greenyellow" onclick = "Equal()">=</td> 
+        </tr>
+    </table></div>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
