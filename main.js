@@ -9,7 +9,7 @@ var screen = "";
 document.getElementById("body").onkeyup = function (e) {
   var key = e.key;
 
-  // digits
+  // digit keys
   if (key < 10 && key >= 0) {
     Click(Number(key));
   }
