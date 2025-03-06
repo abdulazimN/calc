@@ -1,7 +1,7 @@
 var num1 = "";
 var num2 = "";
 var Oper = "";
-const MAX = 10;
+const MAX = 16;
 var mini = "";
 var screen = "";
 
@@ -11,7 +11,7 @@ document.getElementById("body").onkeyup = function (e) {
   
   if(mini != "ERR")
   {
-    // digit keys
+    //digit keys
     if (key < 10 && key >= 0) {
       Click(Number(key));
     }

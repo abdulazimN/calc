@@ -1,19 +1,26 @@
+body{
+    padding-top: 20px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
 
 .cont{
-    padding-top: 50px;
-    margin: auto;
-    width: 320px;
+    background-color: darkblue;
+    display: inline-block;
 }
 
 td {
     background-color: lightskyblue;
-    height: 80px;
-    width: 80px;
+    width: calc(min(95vw/4,95vh/7));
+    height: calc(min(95vw/4,95vh/7));
     text-align: center;
     font-size: x-large;
     border-radius: 10px;
     user-select: none;
+    padding: 0;
 }
+
 #screen{
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -21,6 +28,7 @@ td {
     background-color: lightcyan;
     user-select: all;
 }
+
 #mini {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -28,7 +36,35 @@ td {
     text-align: right;
     user-select: all;
 }
+
+.buttons:active{
+ background-color: rgba(135, 206, 250, 0.9);
+ transform: translateY(1px);
+}
+
 .delete {
     background-color: dodgerblue;
     color: aliceblue;
 }
+.delete:active{
+    background-color: rgba(30, 143, 255, 0.832);
+    transform: translateY(1px);
+}
+
+#dot{
+    background-color:lightseagreen;
+}
+#dot:active{
+    background-color: rgb(30, 152, 146);
+    transform: translateY(1px);
+}
+
+#equal{
+    background-color: greenyellow;
+}
+#equal:active {
+    background-color: rgb(148, 220, 41);
+    transform: translateY(1px);
+}
+
+
